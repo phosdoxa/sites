@@ -1,0 +1,22 @@
+{
+  "name": "huddle-landing-page-945317",
+  "version": "1.0.0",
+  "description": "Static landing page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -r -w ./scss -o ./dist/styles/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdphut/huddle-landing-page-945317.git"
+  },
+  "author": "Phut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tdphut/huddle-landing-page-945317/issues"
+  },
+  "homepage": "https://github.com/tdphut/huddle-landing-page-945317#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
