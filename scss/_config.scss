@@ -1,0 +1,36 @@
+// Typography
+$heading-font-stack: Poppins, Arial, Helvetica, sans-serif;
+$heading-font-weight: 600;
+$body-font-stack: "Open Sans", Arial, Helvetica, sans-serif;
+$body-font-weight: 400;
+$button-font-weight: 700;
+$font-size-base: 18px;
+
+// Colors
+$primary-color: hsl(322, 100%, 66%);
+$header-background: hsl(193, 100%, 96%);
+$footer-background: hsl(192, 100%, 9%);
+$feature-text-color: hsl(208, 11%, 55%);
+
+
+// Background
+$mobile-bg: url('/images/bg-hero-mobile.svg');
+$desktop-bg: url('/images/bg-hero-desktop.svg');
+
+
+// Flexbox cross-browser
+$center: center;
+$justify-content: justify-content;
+$align-items: align-items;
+
+@mixin alignItems($value) {
+    -webkit-box-align: $value;
+    -ms-flex-align: $value;
+    align-items: $value;
+}
+
+// Set background image
+@mixin setBgImg($img) {
+    background-image: $img;
+    background-color: $header-background;
+}
