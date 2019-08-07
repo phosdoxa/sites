@@ -2,12 +2,12 @@
   list-style-type: none;
   padding: 0; }
 
-.header .header__nav {
+.header .header__nav, footer .address__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.header .call-to-action {
+.header .call-to-action, .feature-action .call-to-action {
   background: #ff52bf;
   padding: 11px 45px;
   border: 1px solid #ff52bf;
@@ -16,7 +16,7 @@
   font-weight: 700;
   color: white; }
 
-.header h1 {
+.header .hero__heading, .feature .feature_heading, .feature-action .action__heading {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: #00252e; }
@@ -24,6 +24,7 @@
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
+  font-size: 18px;
   margin: 0; }
 
 .header {
@@ -49,19 +50,75 @@ body {
     font-weight: 700;
     color: #00252e; }
   .header .header__hero {
-    width: 80%;
-    margin: 75px auto;
+    width: 82%;
+    margin: 75px auto 0 auto;
     padding-bottom: 25px;
     text-align: center; }
-  .header h1 {
-    font-size: 1.6em; }
+  .header .hero__heading {
+    font-size: 1.3em; }
   .header p {
-    line-height: 1.5em; }
+    font-size: .9em;
+    line-height: 1.5em;
+    margin: 24px auto 15px auto; }
   .header .call-to-action {
     margin-top: 18px;
     margin-bottom: 50px; }
   .header .hero_img {
     width: 100%; }
 
-.feature img {
-  width: 100px; }
+main {
+  margin-top: 60px; }
+
+.feature {
+  width: 90%;
+  margin: 35px auto;
+  padding: 20px 0;
+  border: 1px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px -5px #00252e;
+  text-align: center; }
+  .feature .feature__illustration {
+    padding: 30px 50px; }
+  .feature .feature__description {
+    padding: 0 38px; }
+  .feature .feature_heading {
+    font-size: 1.1em;
+    margin: 23px auto 10px auto; }
+  .feature .feature__text {
+    font-size: .8em;
+    line-height: 1.4em;
+    color: #808d99; }
+  .feature .feature__img {
+    width: 100%; }
+
+.feature-action {
+  width: 94%;
+  padding: 40px 0;
+  position: relative;
+  top: 90px;
+  background: white;
+  margin-bottom: 25px; }
+  .feature-action .action__heading {
+    font-size: 1em;
+    margin: 5px auto 25px 0; }
+  .feature-action .call-to-action {
+    padding: 11px 40px; }
+
+footer {
+  background-color: #00252e;
+  padding: 136px 15px 10px 15px; }
+  footer p, footer a {
+    color: white; }
+  footer .footer__logo {
+    filter: brightness(0) invert(100) grayscale(100);
+    width: 50%; }
+  footer .footer__body {
+    margin-top: 25px; }
+  footer .address__inner div {
+    min-width: 20px;
+    margin-top: 3px; }
+  footer .address__inner p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 18px;
+    font-size: .9em; }
