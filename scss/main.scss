@@ -17,7 +17,7 @@
     padding: 11px 45px;
     border: 1px solid $primary-color;
     border-radius: 25px;
-    box-shadow: 2px 5px 10px -5px $footer-background;
+    @include boxShadow($shadow-btn-action);
     font-weight: $button-font-weight;
     color: white;
 }
@@ -35,10 +35,14 @@ body {
     margin: 0;
 }
 
+img {
+    width: 100%;
+}
+
 
 
 // Mobiles first //
-// Header
+// Header layout
 .header {
     @include setBgImg($mobile-bg);
 
@@ -50,23 +54,19 @@ body {
         padding-top: 20px;
     }
 
-    a {
+    .nav__link {
         display: inline-block;
         width: 40%;
         padding-top: 3px;
     }
 
-    .header__logo {
-        width: 100%;
-    }
-
     #nav__btn {
         margin-left: auto;
-        background: white;
+        background: $footer-text-color;
         padding: 5px 25px;
-        border: 1px solid white;
+        border: 1px solid $footer-text-color;
         border-radius: 15px;
-        box-shadow: 0 2px 5px 0px $feature-text-color;
+        @include boxShadow($shadow-btn-nav);
         font-weight: $button-font-weight;
         color: $footer-background;
     }
@@ -83,7 +83,7 @@ body {
         font-size: 1.3em;
     }
     
-    p {
+    .hero__text {
         font-size: .9em;
         line-height: 1.5em;
         margin: 24px auto 15px auto;
@@ -94,12 +94,10 @@ body {
         margin-top: 18px;
         margin-bottom: 50px;
     }
-
-    .hero_img {
-        width: 100%;
-    }
 }
 
+
+// Main layout
 main {
     margin-top: 60px;
 }
@@ -108,9 +106,9 @@ main {
     width: 90%;
     margin: 35px auto;
     padding: 20px 0;
-    border: 1px solid white;
+    border: 1px solid $footer-text-color;
     border-radius: 15px;
-    box-shadow: 0 0 10px -5px $footer-background;
+    @include boxShadow($shadow-feature-card);
     text-align: center;
 
     .feature__illustration {
@@ -143,7 +141,7 @@ main {
     padding: 40px 0;
     position: relative;
     top: 90px;
-    background: white;
+    background: $footer-text-color;
     margin-bottom: 25px;
 
     .action__heading {
@@ -158,11 +156,17 @@ main {
     }
 }
 
+
+// Footer layout
 footer {
     background-color: $footer-background;
     padding: 134px 16px 10px 15px;
     p, a {
         color: $footer-text-color;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .footer__logo {
@@ -177,18 +181,22 @@ footer {
     .address__inner {
         @extend %flexbox;
         margin-bottom: 25px;
+    }
 
-        div {
-            min-width: 20px;
-            margin-top: 3px;
-        }
+    .address__icon {
+        min-width: 20px;
+        margin-top: 1px;
+    }
 
-        p {
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 18px;
-            font-size: .9em;
-        }
+    #location {
+        margin-top: 5px;
+    }
+
+    .address__text {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 18px;
+        font-size: .9em;
     }
 
     .footer__nav {
@@ -201,10 +209,6 @@ footer {
 
     .nav__item {
         margin-bottom: 17px;
-
-        a {
-            text-decoration: none;
-        }
     }
 
     .footer__social {
@@ -218,12 +222,12 @@ footer {
             @extend %flexbox;
             width: 48px;
             height: 48px; 
-            margin-left: 15px;
-            border: 1px solid white;
+            margin-left: 20px;
+            border: 1px solid $footer-text-color;
             border-radius: 50%;
         }
 
-        a {
+        .social__icon {
             margin: auto;
             font-size: 1.2em;
             padding: 10px 15px;

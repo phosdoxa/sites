@@ -18,8 +18,21 @@ $footer-text-color: hsl(100, 100, 100);
 $mobile-bg: url('/images/bg-hero-mobile.svg');
 $desktop-bg: url('/images/bg-hero-desktop.svg');
 
+// Set background image
+@mixin setBgImg($img) {
+    background-image: $img;
+    background-color: $header-background;
+}
 
-// Flexbox cross-browser
+
+// Box shadow
+$shadow-btn-nav: 0 2px 5px 0px $feature-text-color;
+$shadow-btn-action: 2px 5px 10px -5px $footer-background;
+$shadow-feature-card: 0 0 10px 0px $footer-background;
+
+
+
+// *** Cross-browser *** //
 $center: center;
 $justify-content: justify-content;
 $align-items: align-items;
@@ -36,9 +49,8 @@ $align-items: align-items;
     justify-content: $value;
 }
 
-
-// Set background image
-@mixin setBgImg($img) {
-    background-image: $img;
-    background-color: $header-background;
+@mixin boxShadow($value) {
+    -webkit-box-shadow: $value;
+    box-shadow: $value;
 }
+
