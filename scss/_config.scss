@@ -30,6 +30,13 @@ $align-items: align-items;
     align-items: $value;
 }
 
+@mixin justifyContent($value) {
+    -webkit-box-pack: $value;
+    -ms-flex-pack: $value;
+    justify-content: $value;
+}
+
+
 // Set background image
 @mixin setBgImg($img) {
     background-image: $img;

@@ -160,7 +160,7 @@ main {
 
 footer {
     background-color: $footer-background;
-    padding: 136px 15px 10px 15px;
+    padding: 134px 16px 10px 15px;
     p, a {
         color: $footer-text-color;
     }
@@ -171,11 +171,12 @@ footer {
     }
 
     .footer__body {
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     .address__inner {
         @extend %flexbox;
+        margin-bottom: 25px;
 
         div {
             min-width: 20px;
@@ -188,5 +189,59 @@ footer {
             margin-left: 18px;
             font-size: .9em;
         }
+    }
+
+    .footer__nav {
+        margin-top: 50px;
+    }
+
+    .nav__list {
+        @extend %nav-list-share;
+    }
+
+    .nav__item {
+        margin-bottom: 17px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .footer__social {
+        .nav__list {
+            margin-top: 60px;
+            @extend %flexbox;
+            @include justifyContent($center);
+        }
+
+        .nav__item {
+            @extend %flexbox;
+            width: 48px;
+            height: 48px; 
+            margin-left: 15px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        a {
+            margin: auto;
+            font-size: 1.2em;
+            padding: 10px 15px;
+        }
+    }
+
+    .copy {
+        text-align: center;
+    }
+
+    .attribution {
+        font-size: .7em;
+      }
+    .attribution a {
+        color: $primary-color;
+    }
+
+    .copy__right {
+        font-size: .8em;
     }
 }
