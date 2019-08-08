@@ -36,6 +36,7 @@ $shadow-feature-card: 0 0 10px 0px $footer-background;
 $center: center;
 $justify-content: justify-content;
 $align-items: align-items;
+$two-colums-auto: auto auto;
 
 @mixin alignItems($value) {
     -webkit-box-align: $value;
@@ -54,3 +55,14 @@ $align-items: align-items;
     box-shadow: $value;
 }
 
+@mixin gridTemplateCol($value) {
+    -ms-grid-columns: $value;
+    grid-template-columns: $value;
+}
+
+ // *** Responsive layout *** // 
+ @mixin mediaMedium {
+    @media screen and (min-width: 426px) {
+        @content;
+    }
+ }

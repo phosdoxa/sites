@@ -1,3 +1,28 @@
+@media screen and (min-width: 426px) {
+  .footer__nav .nav__list {
+    display: -ms-grid;
+    display: grid; }
+  body > .header > .header__nav {
+    padding-top: 30px; }
+  .header__logo {
+    width: 155px; }
+  body > header .header__nav #nav__btn {
+    padding: 5px 35px;
+    border-radius: 35px; }
+  body > .header .hero__heading {
+    font-size: 1.7em; }
+  header .header_img .hero_img {
+    width: 80%; }
+  main .feature .feature__img {
+    width: 80%; }
+  section.feature-action .action__heading {
+    font-size: 1.1em; }
+  footer .footer__head .footer__logo {
+    width: 30%; }
+  .footer__nav .nav__list {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto; } }
+
 .header .header__nav, footer .nav__list {
   list-style-type: none;
   padding: 0; }

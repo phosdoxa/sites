@@ -1,0 +1,55 @@
+
+
+@include mediaMedium {
+    %grid {
+        display: -ms-grid;
+        display: grid;
+    }
+
+    body > .header > .header__nav {
+        padding-top: 30px;
+    }
+
+    .header__logo {
+        width: 155px;
+    }
+
+    body > header .header__nav #nav__btn {
+        padding: 5px 35px;
+        border-radius: 35px;
+    }
+
+    body > .header .hero__heading {
+        font-size: 1.7em;
+    }
+
+    header .header_img .hero_img {
+        width: 80%;
+    }
+
+    // header .header__hero .call-to-action {
+    //     padding: 18px 60px;
+    //     font-size: 1em;
+    //     border-radius: 40px;
+    //     margin: 30px auto 60px auto;
+    // }
+
+    main .feature .feature__img {
+        width: 80%;
+    }
+
+    section.feature-action .action__heading {
+        font-size: 1.1em;
+    }
+
+    footer .footer__head .footer__logo {
+            width: 30%;
+        }
+
+    .footer__nav {
+        .nav__list {
+            @extend %grid;
+            @include gridTemplateCol(auto auto);
+        }
+    }
+}
