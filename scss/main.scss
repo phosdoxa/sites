@@ -109,6 +109,7 @@ main {
     border: 1px solid $footer-text-color;
     border-radius: 15px;
     @include boxShadow($shadow-feature-card);
+    background-color: $footer-text-color;
     text-align: center;
 
     .feature__illustration {
@@ -167,6 +168,7 @@ footer {
 
     a {
         text-decoration: none;
+        padding: 12px 0px;
     }
 
     .footer__logo {

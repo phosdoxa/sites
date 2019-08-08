@@ -32,7 +32,7 @@ img {
   width: 100%; }
 
 .header {
-  background-image: url("/images/bg-hero-mobile.svg");
+  background-image: url("../../images/bg-hero-mobile.svg");
   background-color: #ebfbff; }
   .header .header__nav {
     width: 90%;
@@ -78,6 +78,7 @@ main {
   border-radius: 15px;
   -webkit-box-shadow: 0 0 10px 0px #00252e;
   box-shadow: 0 0 10px 0px #00252e;
+  background-color: white;
   text-align: center; }
   .feature .feature__illustration {
     padding: 30px 50px; }
@@ -112,7 +113,8 @@ footer {
   footer p, footer a {
     color: white; }
   footer a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 12px 0px; }
   footer .footer__logo {
     filter: brightness(0) invert(100) grayscale(100);
     width: 50%; }
