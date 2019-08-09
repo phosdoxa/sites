@@ -13,56 +13,59 @@ $footer-background: hsl(192, 100%, 9%);
 $feature-text-color: hsl(208, 11%, 55%);
 $footer-text-color: hsl(100, 100, 100);
 
-
 // Background
-$mobile-bg: url('../../images/bg-hero-mobile.svg');
-$desktop-bg: url('../../images/bg-hero-desktop.svg');
+$mobile-bg: url("../../images/bg-hero-mobile.svg");
+$desktop-bg: url("../../images/bg-hero-desktop.svg");
 
 // Set background image
 @mixin setBgImg($img) {
-    background-image: $img;
-    background-color: $header-background;
+  background-image: $img;
+  background-color: $header-background;
 }
 
-
 // Box shadow
-$shadow-btn-nav: 0 2px 5px 0px $feature-text-color;
+$shadow-btn-nav: 2px 5px 5px 0px $feature-text-color;
 $shadow-btn-action: 2px 5px 10px -5px $footer-background;
 $shadow-feature-card: 0 0 10px 0px $footer-background;
 
-
-
-// *** Cross-browser *** //
-$center: center;
-$justify-content: justify-content;
-$align-items: align-items;
-$two-colums-auto: auto auto;
+// *** Flexbox and Grid *** //
 
 @mixin alignItems($value) {
-    -webkit-box-align: $value;
-    -ms-flex-align: $value;
-    align-items: $value;
+  -webkit-box-align: $value;
+  -ms-flex-align: $value;
+  align-items: $value;
 }
 
 @mixin justifyContent($value) {
-    -webkit-box-pack: $value;
-    -ms-flex-pack: $value;
-    justify-content: $value;
+  -webkit-box-pack: $value;
+  -ms-flex-pack: $value;
+  justify-content: $value;
 }
 
 @mixin boxShadow($value) {
-    -webkit-box-shadow: $value;
-    box-shadow: $value;
+  -webkit-box-shadow: $value;
+  box-shadow: $value;
 }
 
 @mixin gridTemplateCol($value) {
-    -ms-grid-columns: $value;
-    grid-template-columns: $value;
+  -ms-grid-columns: $value;
+  grid-template-columns: $value;
 }
 
- // *** Responsive layout *** // 
- @mixin mediaMedium {
-    @media screen and (min-width: 426px) {
-        @content;
-    }
- }
+@mixin flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+// Transform // 
+@mixin transform($function) {
+  -webkit-transform: $function;
+  -ms-transform: $function;
+  transform: $function;
+}
