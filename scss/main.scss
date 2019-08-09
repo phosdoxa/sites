@@ -48,11 +48,14 @@ button:active,
   @include boxShadow(none);
 }
 
-// Mobiles first //
-// Header layout
+/*** Layout for Mobiles
+
+/*** Start lay out the header ***/
+
 .header {
   @include setBgImg($mobile-bg);
 }
+
 .header__nav {
   @extend %nav-list-share;
   @include flexbox();
@@ -102,7 +105,9 @@ button:active,
   margin-bottom: 50px;
 }
 
-// Main layout
+// *** End lay out the header
+
+// *** Start layout for the Main
 main {
   margin-top: 60px;
 }
@@ -163,10 +168,14 @@ main {
   }
 }
 
-// Footer layout
+// *** End lay out for the Main
+
+// *** Start lay out theFooter
+
 footer {
   background-color: $footer-background;
   padding: 134px 16px 10px 15px;
+
   p,
   a {
     color: $footer-text-color;
@@ -261,6 +270,14 @@ footer {
   font-size: 0.8em;
 }
 
+// *** End lay out for the Footer
+
+
+
+
+/*** When the viewport is greater then 424px
+     then apply this rules ***/
+
 @media screen and (min-width: 425px) {
   #nav__btn {
     padding: 5px 35px;
@@ -295,6 +312,10 @@ footer {
     }
   }
 }
+
+
+/*** When the viewport is greater then 549px
+     then apply this rules ***/
 
 @media screen and (min-width: 550px) {
   .feature {
@@ -377,7 +398,12 @@ footer {
     width: 30%;
   }
 }
-// /////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/*** When the viewport is greater then 967px
+     then apply this rules ***/
+
 @media screen and (min-width: 968px) {
 
   .header {
@@ -532,6 +558,11 @@ footer {
   }
 }
 
+
+
+/*** When the viewport is greater then 424px
+     then apply this rules ***/
+     
 @media screen and (min-width: 1210px) {
   h1.hero__heading {
     font-size: 2.5em;

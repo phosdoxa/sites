@@ -6,6 +6,8 @@ $body-font-weight: 400;
 $button-font-weight: 700;
 $font-size-base: 18px;
 
+
+
 // Colors
 $primary-color: hsl(322, 100%, 66%);
 $header-background: hsl(193, 100%, 96%);
@@ -13,20 +15,26 @@ $footer-background: hsl(192, 100%, 9%);
 $feature-text-color: hsl(208, 11%, 55%);
 $footer-text-color: hsl(100, 100, 100);
 
+
+
 // Background
 $mobile-bg: url("../../images/bg-hero-mobile.svg");
 $desktop-bg: url("../../images/bg-hero-desktop.svg");
-
 // Set background image
 @mixin setBgImg($img) {
   background-image: $img;
   background-color: $header-background;
 }
 
+
+
 // Box shadow
 $shadow-btn-nav: 2px 5px 5px 0px $feature-text-color;
 $shadow-btn-action: 2px 5px 10px -5px $footer-background;
 $shadow-feature-card: 0 0 10px 0px $footer-background;
+
+
+
 
 // *** Flexbox and Grid *** //
 
@@ -62,6 +70,8 @@ $shadow-feature-card: 0 0 10px 0px $footer-background;
   display: -ms-grid;
   display: grid;
 }
+
+
 
 // Transform // 
 @mixin transform($function) {

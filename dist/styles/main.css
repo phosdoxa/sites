@@ -41,6 +41,9 @@ button:active,
   -webkit-box-shadow: none;
   box-shadow: none; }
 
+/*** Layout for Mobiles
+
+/*** Start lay out the header ***/
 .header {
   background-image: url("../../images/bg-hero-mobile.svg");
   background-color: #ebfbff; }
@@ -213,6 +216,8 @@ footer {
 .copy__right {
   font-size: 0.8em; }
 
+/*** When the viewport is greater then 424px
+     then apply this rules ***/
 @media screen and (min-width: 425px) {
   #nav__btn {
     padding: 5px 35px;
@@ -234,6 +239,8 @@ footer {
     -ms-grid-columns: auto auto;
     grid-template-columns: auto auto; } }
 
+/*** When the viewport is greater then 549px
+     then apply this rules ***/
 @media screen and (min-width: 550px) {
   .feature {
     width: 80%; }
@@ -288,6 +295,8 @@ footer {
   .footer__logo {
     width: 30%; } }
 
+/*** When the viewport is greater then 967px
+     then apply this rules ***/
 @media screen and (min-width: 968px) {
   .header {
     background-image: url("../../images/bg-hero-desktop.svg");
@@ -378,6 +387,8 @@ footer {
   .copy {
     text-align: right; } }
 
+/*** When the viewport is greater then 424px
+     then apply this rules ***/
 @media screen and (min-width: 1210px) {
   h1.hero__heading {
     font-size: 2.5em; } }
