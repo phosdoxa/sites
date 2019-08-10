@@ -13,12 +13,12 @@
   color: white; }
 
 .hero__heading, .feature_heading, .feature-action .action__heading {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   color: #00252e; }
 
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 18px;
   margin: 0; }
@@ -38,12 +38,12 @@ button:active,
   -webkit-transform: translate(2px, 1px);
   -ms-transform: translate(2px, 1px);
   transform: translate(2px, 1px);
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+  -webkit-box-shadow: "none";
+  box-shadow: "none"; }
 
-/*** Layout for Mobiles
-
-/*** Start lay out the header ***/
+/*** Mobile layout first
+  
+  /*** Start lay out the header ***/
 .header {
   background-image: url("../../images/bg-hero-mobile.svg");
   background-color: #ebfbff; }
@@ -178,7 +178,7 @@ footer {
   margin-bottom: 17px; }
 
 .footer__social .nav__list {
-  margin-top: 60px;
+  margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,7 +220,7 @@ footer {
   font-size: 0.8em; }
 
 /*** When the viewport is greater then 424px
-     then apply this rules ***/
+     then apply these rules ***/
 @media screen and (min-width: 425px) {
   #nav__btn {
     padding: 5px 35px;
@@ -243,7 +243,7 @@ footer {
     grid-template-columns: auto auto; } }
 
 /*** When the viewport is greater then 549px
-     then apply this rules ***/
+     then apply these rules ***/
 @media screen and (min-width: 550px) {
   .feature {
     width: 80%; }
@@ -254,6 +254,8 @@ footer {
   .address__text {
     width: 92%; } }
 
+/*** When the viewport is greater then 768px
+     then apply these rules ***/
 @media screen and (min-width: 768px) {
   .header__nav {
     padding-top: 40px; }
@@ -306,7 +308,7 @@ footer {
     padding-bottom: 15px; } }
 
 /*** When the viewport is greater then 967px
-     then apply this rules ***/
+     then apply these rules ***/
 @media screen and (min-width: 968px) {
   .header {
     background-image: url("../../images/bg-hero-desktop.svg");
@@ -348,7 +350,8 @@ footer {
     width: 100%; }
   .feature__img {
     width: 100%; }
-  .feature__text, .feature_heading {
+  .feature__text,
+  .feature_heading {
     width: 80%; }
   .feature_heading {
     margin: 15px auto;
@@ -359,13 +362,13 @@ footer {
     margin: auto; }
   section.feature-action {
     width: 55%;
-    padding: 30px;
+    padding: 0 30px;
     top: 143px; }
   .action__inner .call-to-action {
-    padding: 30px 130px; }
+    padding: 25px 95px; }
   .feature-action .action__heading {
     margin: 40px auto 10px 0;
-    font-size: 2em; }
+    font-size: 1.6em; }
   footer {
     padding: 170px 80px 10px 80px; }
   .footer__head {
@@ -398,9 +401,13 @@ footer {
     text-align: right; } }
 
 /*** When the viewport is greater then 424px
-     then apply this rules ***/
+     then apply these rules ***/
 @media screen and (min-width: 1210px) {
   h1.hero__heading {
     font-size: 2.5em; }
+  section.feature-action {
+    padding: 30px; }
   .footer__body {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  .feature-action .action__heading {
+    font-size: 2em; } }

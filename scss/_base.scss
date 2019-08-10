@@ -1,0 +1,275 @@
+// Extend/Inheritance
+%nav-list-share {
+  list-style-type: none;
+  padding: 0;
+}
+
+%call-to-action {
+  background: $primary-color;
+  padding: 11px 45px;
+  border: 1px solid $primary-color;
+  border-radius: 25px;
+  @include boxShadow($shadow-btn-action);
+  font-weight: $button-font-weight;
+  color: white;
+}
+
+%heading-font {
+  font-family: $heading-font-stack;
+  font-weight: $heading-font-weight;
+  color: $footer-background;
+}
+
+body {
+  font-family: $body-font-stack;
+  font-weight: $body-font-weight;
+  font-size: $font-size-base;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active,
+#nav__btn:active,
+.call-to-action:active {
+  @include transform(translate(2px, 1px));
+  @include boxShadow('none');
+}
+
+/*** Mobile layout first
+  
+  /*** Start lay out the header ***/
+
+.header {
+  @include setBgImg($mobile-bg);
+}
+
+.header__nav {
+  @extend %nav-list-share;
+  @include flexbox;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.nav__link {
+  display: inline-block;
+  width: 40%;
+  padding-top: 3px;
+}
+
+#nav__btn {
+  margin-left: auto;
+  background: $footer-text-color;
+  padding: 5px 25px;
+  border: 1px solid $footer-text-color;
+  border-radius: 15px;
+  @include boxShadow($shadow-btn-nav);
+  font-weight: $button-font-weight;
+  color: $footer-background;
+}
+
+.header__hero {
+  width: 82%;
+  margin: 75px auto 0 auto;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.hero__heading {
+  @extend %heading-font;
+  font-size: 1.3em;
+}
+
+.hero__text {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin: 24px auto 15px auto;
+}
+
+.call-to-action {
+  @extend %call-to-action;
+  margin-top: 18px;
+  margin-bottom: 50px;
+}
+
+// *** End lay out the header
+
+// *** Start layout for the Main
+main {
+  margin-top: 60px;
+}
+
+.feature {
+  width: 90%;
+  margin: 35px auto;
+  padding: 20px 0;
+  border: 1px solid $footer-text-color;
+  border-radius: 15px;
+  @include boxShadow($shadow-feature-card);
+  background-color: $footer-text-color;
+  text-align: center;
+}
+
+.feature__illustration {
+  padding: 30px 50px;
+}
+
+.feature__description {
+  padding: 0 38px;
+}
+
+.feature_heading {
+  @extend %heading-font;
+  font-size: 1.1em;
+  margin: 23px auto 10px auto;
+}
+
+.feature__text {
+  font-size: 0.8em;
+  line-height: 1.4em;
+  color: $feature-text-color;
+}
+
+.feature__img {
+  width: 100%;
+}
+
+.feature-action {
+  width: 94%;
+  padding: 40px 0;
+  position: relative;
+  top: 90px;
+  background: $footer-text-color;
+  margin-bottom: 25px;
+
+  .action__heading {
+    @extend %heading-font;
+    font-size: 1em;
+    margin: 5px auto 25px 0;
+  }
+
+  .call-to-action {
+    @extend %call-to-action;
+    padding: 11px 40px;
+    margin: 0px auto;
+  }
+}
+
+// *** End lay out for the Main
+
+// *** Start lay out theFooter
+
+footer {
+  background-color: $footer-background;
+  padding: 134px 16px 10px 15px;
+
+  p,
+  a {
+    color: $footer-text-color;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 12px 0px;
+  }
+}
+
+.footer__head {
+  width: 48%;
+}
+
+.footer__logo {
+  filter: brightness(0) invert(100) grayscale(100);
+  width: 100%;
+}
+
+.footer__body {
+  margin-top: 20px;
+}
+
+.address__inner {
+  @include flexbox;
+  margin-bottom: 25px;
+}
+
+#location {
+  margin-top: 5px;
+  width: 13px;
+}
+
+.address__text {
+  margin: 0 0 0 auto;
+  width: 89%;
+  font-size: 0.9em;
+}
+
+.footer__nav {
+  margin-top: 50px;
+}
+
+.nav__list {
+  @extend %nav-list-share;
+}
+
+.nav__item {
+  margin-bottom: 17px;
+}
+
+.footer__social {
+  .nav__list {
+    margin-top: 45px;
+    @include flexbox;
+    @include justifyContent(center);
+  }
+
+  ul.nav__list:nth-child(2) {
+    order: 3;
+  }
+
+  ul.nav__list:nth-child(3) {
+    order: 2;
+  }
+
+  .nav__item {
+    @include flexbox();
+    width: 48px;
+    height: 48px;
+    margin-left: 20px;
+    border: 1px solid $footer-text-color;
+    border-radius: 50%;
+  }
+
+  .social__icon {
+    margin: auto;
+    font-size: 1.2em;
+    padding: 10px 15px;
+  }
+}
+
+.copy {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 0.7em;
+}
+.attribution a {
+  color: $primary-color;
+}
+
+.copy__right {
+  font-size: 0.8em;
+}
+
+// *** End lay out for the Footer
