@@ -61,7 +61,7 @@ button:active,
   @include flexbox();
   width: 90%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .nav__link {
@@ -187,9 +187,13 @@ footer {
   }
 }
 
+.footer__head {
+  width: 48%;
+}
+
 .footer__logo {
   filter: brightness(0) invert(100) grayscale(100);
-  width: 50%;
+  width: 100%;
 }
 
 .footer__body {
@@ -301,7 +305,7 @@ footer {
     font-size: 1.1em;
   }
 
-  .footer__logo {
+  .footer__head {
     width: 40%;
   }
 
@@ -324,6 +328,14 @@ footer {
 
   section.feature-action {
     width: 70%;
+  }
+
+  .footer__head {
+    width: 35%;
+  }
+
+  .address__text {
+    width: 92%;
   }
 }
 
@@ -349,6 +361,7 @@ footer {
 
   .header_img {
     width: 55%;
+    padding-left: 20px;
   }
 
   h1.hero__heading {
@@ -394,8 +407,12 @@ footer {
     font-size: 1.5em;
   }
 
-  .footer__logo {
-    width: 30%;
+  .footer__head {
+    width: 25%;
+  }
+
+  .footer__body {
+    padding-bottom: 15px;
   }
 }
 
@@ -510,17 +527,17 @@ footer {
   }
 
   footer {
-    padding: 210px 80px 10px 80px;
+    padding: 170px 80px 10px 80px;
   }
 
-  .footer__logo {
-    width: 20%;
+  .footer__head {
+    width: 18%;
   }
 
   .footer__body {
     @include flexbox();
     @include alignItems(flex-start);
-    margin-top: 50px;
+    padding-top: 0px;
   }
 
   .footer__nav,
@@ -562,9 +579,13 @@ footer {
 
 /*** When the viewport is greater then 424px
      then apply this rules ***/
-     
+
 @media screen and (min-width: 1210px) {
   h1.hero__heading {
     font-size: 2.5em;
+  }
+
+  .footer__body {
+    padding-top: 15px;
   }
 }
