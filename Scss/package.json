@@ -1,0 +1,22 @@
+{
+  "name": "base-apparel-coming-soon",
+  "version": "1.0.0",
+  "description": "Static landing page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -r -w ../Scss -o ../styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdphut/base-apparel-coming-soon.git"
+  },
+  "author": "Phut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tdphut/base-apparel-coming-soon/issues"
+  },
+  "homepage": "https://github.com/tdphut/base-apparel-coming-soon#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
