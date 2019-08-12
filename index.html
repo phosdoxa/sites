@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- To get google font -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
-  
+
   <link href="styles/main.css" rel="stylesheet">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <main>
+    <header class="header-logo">
+      <img class="header-img" src="./images/logo.svg"
+        alt="logo with a pink circle on the left, right side width text: base apparel">
+    </header>
 
-  We're coming soon
+    <div class="hero"></div>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <div class="main-content">
+      <div>
+        <div class="announcement">
+          <h1><span class="heading-color">WE'RE</span> COMING SOON</h1>
+          <p>Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        </div>
 
-  Email Address
-  
+        <form class="form">
+          <div class="form__container">
+            <label for="user-email">
+              <input type="email" placeholder="Email Address" id="user-email" name="userEmail" value="">
+            </label>
+            <div class="submit">
+              <img class="hide" src="./images/icon-error.svg" alt="">
+              <button type="button" id="submit__btn">
+                <img class="arrow-icon" src="./images/icon-arrow.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <div class="warning">
+            <p class="hide">Please provide a valid email</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
 </body>
+
 </html>
