@@ -6,9 +6,33 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 445px;
+    justify-self: center;
+
+    @include respond-to('medium') {
+        width: 466px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: flex-end;
+        padding: 0 40px;
+    }
+
+    @include respond-to('large') {
+        padding: 0;
+    }
 }
 
 .header-img {
     width: 31%;
     margin-left: 15px;
+
+    @include respond-to('medium') {
+        margin-left: 10px;
+        width: auto;
+    }
+
+    @include respond-to('large') {
+        margin-left: 0;
+    }
 }

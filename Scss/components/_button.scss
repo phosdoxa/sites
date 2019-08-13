@@ -10,6 +10,11 @@
   height: 48px;
   box-shadow: 0px 0px 8px -4px $heading-color;
   background: linear-gradient(135deg, $button-bg-start, $button-bg-end);
+
+  @include respond-to('medium') {
+    width: 90px;
+    height: 55px;
+  }
 }
 
 #submit__btn:hover {

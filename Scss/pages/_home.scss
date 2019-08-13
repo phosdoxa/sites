@@ -9,6 +9,18 @@ main {
   grid-template-rows: 90px 250px auto;
   justify-content: center;
   background: linear-gradient(135deg, $body-bg-start, $body-bg-end);
+
+  @include respond-to('medium') {
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 12vh 88vh auto;
+    background-image: url('../../images/bg-pattern-desktop.svg');
+  }
+
+  @include respond-to('extraLarge') {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hero {
@@ -18,15 +30,33 @@ main {
   width: 100%;
   max-width: 375px;
   justify-self: center;
+
+  @include respond-to('medium') {
+      grid-area: 1 / 2 / 3 / 3;
+      background-image: url('../../images/hero-desktop.jpg');
+      max-width: 100%;
+  }
 }
 
 .main-content {
     padding: 10px;
     display: flex;
+    overflow-y: auto;
 }
 
 .main-content > div {
     text-align: center;
+    margin: auto;
+    max-width: 446px;
+
+    @include respond-to('medium') {
+        text-align: left;
+        padding: 60px 40px 30px 40px;
+    }
+
+    @include respond-to('large') {
+        padding: 50px 0px 0px 0px;
+    }
 }
 
 .announcement h1 {
@@ -37,6 +67,16 @@ main {
     color: $heading-color;
     line-height: 1.2;
     letter-spacing: 0.15em;
+
+    @include respond-to('medium') {
+        margin-top: auto;
+        font-size: 2.4em;
+        letter-spacing: 0.35em;
+    }
+
+    @include respond-to('large') {
+        font-size: 3.6em;
+    }
 }
 
 .announcement p {
@@ -58,10 +98,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond-to('medium') {
+        justify-content: flex-start;
+    }
 }
 
 label[for=user-email] {
     flex: 0 1 320px;
+
+    @include respond-to('medium') {
+        flex: 0 1 420px;
+    }
 }
 
 #user-email:active {
@@ -85,6 +133,10 @@ label[for=user-email] {
     margin-left: -99px;
     display: flex;
     align-items: center;
+
+    @include respond-to('medium') {
+        margin-left: -123px;
+    }
 }
 
 #user-email {
@@ -93,6 +145,11 @@ label[for=user-email] {
     border: 1px solid $paragraph-color;
     border-radius: 50px;
     padding: 0px 65px 0 25px;
+
+    @include respond-to('medium') {
+        height: 55px;
+        padding-right: 95px;
+    }
 }
 
 .warning {
