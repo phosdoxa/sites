@@ -796,5 +796,130 @@ body {
   position: absolute;
   width: 1px; }
 
+.header-logo {
+  padding: 10px;
+  display: flex;
+  align-items: center; }
+
+.header-img {
+  width: 31%;
+  margin-left: 15px; }
+
+footer {
+  background: #ededed; }
+
+.attribution {
+  font-size: 11px;
+  font-family: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace;
+  text-align: center;
+  margin: auto;
+  padding: 12px; }
+
+.attribution a {
+  color: #3e52a3; }
+
+#submit__btn {
+  border: 1px solid #f8bfbf;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 65px;
+  height: 48px;
+  box-shadow: 0px 0px 8px -4px #413a3a;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c); }
+
+#submit__btn:hover {
+  cursor: pointer; }
+
+#submit__btn:focus {
+  outline: none;
+  background: #f8bfbf; }
+
 main {
-  text-decoration: underline; }
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(auto, 550px);
+  grid-template-rows: 90px 250px auto;
+  justify-content: center;
+  background: linear-gradient(135deg, white, #fff5f5); }
+
+.hero {
+  background-image: url("../../images/hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 375px;
+  justify-self: center; }
+
+.main-content {
+  padding: 10px;
+  display: flex; }
+
+.main-content > div {
+  text-align: center; }
+
+.announcement h1 {
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  font-size: 2.8em;
+  font-weight: 600;
+  color: #413a3a;
+  line-height: 1.2;
+  letter-spacing: 0.15em; }
+
+.announcement p {
+  color: #ce9797;
+  font-weight: 400; }
+
+.heading-color {
+  color: #ce9797;
+  font-weight: 300;
+  display: block; }
+
+.form {
+  margin-top: 2.2em; }
+
+.form__container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+label[for=user-email] {
+  flex: 0 1 320px; }
+
+#user-email:active {
+  border: 2px solid #f96262; }
+
+#user-email:focus {
+  outline: none; }
+
+#user-email:hover {
+  cursor: text;
+  border: 2px solid #ce9797; }
+
+#user-email::placeholder {
+  color: #ce9797; }
+
+.submit {
+  margin-left: -99px;
+  display: flex;
+  align-items: center; }
+
+#user-email {
+  height: 48px;
+  width: 100%;
+  border: 1px solid #ce9797;
+  border-radius: 50px;
+  padding: 0px 65px 0 25px; }
+
+.warning {
+  text-align: left;
+  max-width: 320px;
+  margin: auto;
+  padding-left: 25px;
+  color: #ce9797; }
+
+.show {
+  visibility: visible; }
+
+.hide {
+  visibility: hidden; }

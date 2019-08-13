@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+#submit__btn {
+  border: 1px solid $button-bg-start;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 65px;
+  height: 48px;
+  box-shadow: 0px 0px 8px -4px $heading-color;
+  background: linear-gradient(135deg, $button-bg-start, $button-bg-end);
+}
+
+#submit__btn:hover {
+    cursor: pointer;
+}
+
+#submit__btn:focus {
+    outline: none;
+    background: $button-bg-start;
+}

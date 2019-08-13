@@ -1,3 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+footer {
+  background: $light-grey;
+}
+
+.attribution {
+  font-size: 11px;
+  font-family: $code-font-stack;
+  text-align: center;
+  margin: auto;
+  padding: 12px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
