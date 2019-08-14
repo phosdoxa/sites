@@ -1,0 +1,10 @@
+// To force UTF-8 encoding
+@charset 'utf-8';
+// Get the components assembled all together.
+@import 'config';
+@import 'base'; 
+@import 'min-width425';
+@import 'min-width550';
+@import 'min-width768';
+@import 'min-width968';
+@import 'min-width1012';

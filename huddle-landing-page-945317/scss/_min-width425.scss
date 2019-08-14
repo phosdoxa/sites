@@ -1,0 +1,38 @@
+
+/*** When the viewport is greater then 424px
+     then apply these rules ***/
+     
+@media screen and (min-width: 425px) {
+  #nav__btn {
+    padding: 5px 35px;
+    border-radius: 35px;
+  }
+
+  .header__logo {
+    width: 155px;
+  }
+
+  h1.hero__heading {
+    font-size: 1.4em;
+  }
+
+  .hero_img,
+  .feature__img {
+    width: 80%;
+  }
+
+  .feature-action .action__heading {
+    font-size: 1.1em;
+  }
+
+  .footer__head {
+    width: 40%;
+  }
+
+  .footer__nav {
+    .nav__list {
+      @include grid();
+      @include gridTemplateCol(auto auto);
+    }
+  }
+}

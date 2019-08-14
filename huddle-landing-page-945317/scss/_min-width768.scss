@@ -1,0 +1,79 @@
+/*** When the viewport is greater then 768px
+     then apply these rules ***/
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    padding-top: 40px;
+  }
+
+  .header__hero {
+    @include flexbox();
+    @include alignItems(center);
+    width: 90%;
+    text-align: left;
+  }
+
+  .hero_img {
+    width: 100%;
+  }
+
+  .hero__text-wrapper {
+    width: 45%;
+  }
+
+  .header_img {
+    width: 55%;
+    padding-left: 20px;
+  }
+
+  h1.hero__heading {
+    font-size: 1.4em;
+  }
+
+  .hero__text {
+    padding-right: 20px;
+    font-size: 0.8em;
+  }
+
+  .feature {
+    width: 90%;
+    @include flexbox();
+    @include alignItems(center);
+    text-align: left;
+  }
+
+  .feature__illustration {
+    order: 2;
+  }
+
+  .feature__description {
+    order: 1;
+  }
+
+  .feature:nth-child(2) {
+    .feature__illustration {
+      order: 1;
+    }
+
+    .feature__description {
+      order: 2;
+    }
+  }
+
+  .action__inner {
+    margin: auto;
+    text-align: center;
+  }
+
+  .feature-action .action__heading {
+    font-size: 1.5em;
+  }
+
+  .footer__head {
+    width: 25%;
+  }
+
+  .footer__body {
+    padding-bottom: 15px;
+  }
+}
