@@ -479,7 +479,7 @@ main {
       grid-template-areas: "header hero" "content hero";
       grid-template-columns: 4fr 3fr;
       grid-template-rows: 12vh 88vh auto;
-      background-image: url("https://tdphut.github.io/base-apparel-coming-soon/images/bg-pattern-desktop.svg"); } }
+      background-image: url("https://tdphut.github.io/sites/base-apparel-coming-soon/images/bg-pattern-desktop.svg"); } }
   @media (min-width: 1440px) {
     main {
       max-width: 1440px;
@@ -487,7 +487,7 @@ main {
       margin-right: auto; } }
 
 .hero {
-  background-image: url("https://tdphut.github.io/base-apparel-coming-soon/images/hero-mobile.jpg");
+  background-image: url("https://tdphut.github.io/sites/base-apparel-coming-soon/images/hero-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -497,7 +497,7 @@ main {
     .hero {
       grid-row: hero;
       grid-column: hero;
-      background-image: url("https://tdphut.github.io/base-apparel-coming-soon/images/hero-desktop.jpg");
+      background-image: url("https://tdphut.github.io/sites/base-apparel-coming-soon/images/hero-desktop.jpg");
       max-width: 100%; } }
 
 .main-content {
