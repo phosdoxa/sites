@@ -8,11 +8,13 @@ function init() {
 
   function handleBtnClick() {
     if (!validateEmail(inputField.value)) {
+      inputField.setAttribute("class", "red-border");
       warnElemLists[1].textContent = "Please provide a valid email!";
       for (let i = 0; i < warnElemLists.length; i++) {
           warnElemLists[i].setAttribute("class", "show");
       }
     } else {
+      inputField.setAttribute("class", "normal-border");
       warnElemLists[0].setAttribute("class", "hide");
       warnElemLists[1].textContent = "Thank you for your submit!";
       inputField.value = "";

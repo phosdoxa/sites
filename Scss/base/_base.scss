@@ -33,3 +33,15 @@ a {
     text-decoration: underline;
   }
 }
+
+// For screen reader user only
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
