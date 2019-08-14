@@ -23,7 +23,7 @@ main {
       "content hero";
     grid-template-columns: 4fr 3fr;
     grid-template-rows: 12vh 88vh auto;
-    background-image: url("../../images/bg-pattern-desktop.svg");
+    background-image: image("bg-pattern-desktop.svg");
   }
 
 	// Centralize the layout when the viewport is too large.
@@ -35,7 +35,7 @@ main {
 }
 
 .hero {
-  background-image: url("../../images/hero-mobile.jpg");
+  background-image: image("hero-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -45,15 +45,20 @@ main {
   @include respond-to("medium") {
     grid-row: hero;
     grid-column: hero;
-    background-image: url("../../images/hero-desktop.jpg");
+    background-image: image("hero-desktop.jpg");
     max-width: 100%;
   }
 }
 
 .main-content {
   padding: 10px;
+  margin-bottom: 50px;
   display: flex;
   overflow-y: auto;
+
+  @include respond-to("medium") {
+    margin-bottom: 0;
+  }
 }
 
 .main-content > div {
