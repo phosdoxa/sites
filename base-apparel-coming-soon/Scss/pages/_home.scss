@@ -2,7 +2,7 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-main {
+main.main-content {
   min-height: 100vh;
 	display: grid;
 	
@@ -34,7 +34,7 @@ main {
   }
 }
 
-.hero {
+.hero-image {
   background-image: image("hero-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@ main {
   }
 }
 
-.main-content {
+.hero-content {
   padding: 10px;
   margin-bottom: 50px;
   display: flex;
@@ -61,7 +61,7 @@ main {
   }
 }
 
-.main-content > div {
+.hero-content > div {
   text-align: center;
   margin: auto;
   max-width: 446px;
@@ -84,6 +84,7 @@ main {
   color: $heading-color;
   line-height: 1.2;
   letter-spacing: 0.15em;
+  text-transform: uppercase;
 
   @include respond-to("medium") {
     margin-top: auto;

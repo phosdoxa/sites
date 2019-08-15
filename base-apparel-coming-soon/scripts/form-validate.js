@@ -10,6 +10,7 @@ function init() {
     if (!validateEmail(inputField.value)) {
       inputField.setAttribute("class", "red-border");
       warnElemLists[1].textContent = "Please provide a valid email!";
+      warnElemLists[1].setAttribute("role", "alert");
       for (let i = 0; i < warnElemLists.length; i++) {
           warnElemLists[i].setAttribute("class", "show");
       }

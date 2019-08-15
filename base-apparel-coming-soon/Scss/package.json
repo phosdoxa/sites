@@ -15,8 +15,9 @@
     "compile-sass": "node-sass ../Scss/main.scss ../styles/main.compiled.css",
     "prefix-css": "postcss --use autoprefixer --no-map -b 'last 5 version' ../styles/main.compiled.css -o ../styles/main.prefixed.css",
     "minify-css": "cleancss --level 1 --output ../styles/main.min.css ../styles/main.prefixed.css",
+    "rimraf-css": "rimraf ../styles/main.prefixed.css ../styles/main.compiled.css",
     "dev": "npm run watch-sass -- --watch",
-    "build": "npm-run-all compile-sass prefix-css minify-css"
+    "build": "npm-run-all compile-sass prefix-css minify-css rimraf-css"
   },
   "repository": {
     "type": "git",
